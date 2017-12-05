@@ -5,7 +5,7 @@
 * Date updated: 5.12. 2017
 *
 * Target MCU: ATmega16
-* Description: Logic analyzer based on AVR ATmega16 and graphic display ATM12864D with KS0108 driver
+* Description: Logic analyzer based on MCU ATmega16 and graphic display ATM12864D with KS0108 driver
 ************************************************/
 
 short int viewport_top = 0;
