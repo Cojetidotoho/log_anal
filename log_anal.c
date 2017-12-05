@@ -1,3 +1,13 @@
+/************************************************
+* log_anal.c
+*
+* Miroslav Klein, Lukas Zdrazil , Brno University of Technology
+* Date updated: 5.12. 2017
+*
+* Target MCU: ATmega16
+* Description: Logic analyzer based on AVR ATmega16 and graphic display ATM12864D with KS0108 driver
+************************************************/
+
 short int viewport_top = 0;
 short int viewport_left = 0;
 short int viewport_right = 127;
@@ -80,14 +90,14 @@ for(Load; Load<Load1; Load++){
     ks0108ClearScreen();    //smazani uvodni obrazovky
 
 
-    //  vykresleni obrazovky mereni
+        //vykresleni obrazovky mereni
     draw_text(2, 5, 80, 20, "A", DT_NORMAL);
     draw_text(2,20, 80, 20, "B", DT_NORMAL);
     draw_text(2,35, 80, 20, "C", DT_NORMAL);
     draw_text(2,50, 80, 20, "D", DT_NORMAL);
         time_delay(1);
 
-    // cyklus mereni
+        //cyklus mereni
 for(opak; opak>0; opak++){
 
 
